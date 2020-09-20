@@ -1,8 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBzkmBT7HEdxhfmyqAiUk595hnaU2KvNpE",
+        authDomain: "hackmit2020-suitelife.firebaseapp.com",
+        databaseURL: "https://hackmit2020-suitelife.firebaseio.com",
+        projectId: "hackmit2020-suitelife",
+        storageBucket: "hackmit2020-suitelife.appspot.com",
+        messagingSenderId: "858539722909",
+        appId: "1:858539722909:web:140e0616cc79a9e2782c74",
+        measurementId: "G-HKDZTDMYK6"
+      };
+      firebase.initializeApp(config);
+    </script>
     <meta charset="UTF-8" />
-    <title>Grocery List Prototype</title>
+    <title>Chat Prototype</title>
 
     <!-- styling -->
     <link rel="stylesheet" href="styles/style.css" />
@@ -21,20 +35,7 @@
 
     <!-- firebase for messaging-->
     <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyBzkmBT7HEdxhfmyqAiUk595hnaU2KvNpE",
-        authDomain: "hackmit2020-suitelife.firebaseapp.com",
-        databaseURL: "https://hackmit2020-suitelife.firebaseio.com",
-        projectId: "hackmit2020-suitelife",
-        storageBucket: "hackmit2020-suitelife.appspot.com",
-        messagingSenderId: "858539722909",
-        appId: "1:858539722909:web:140e0616cc79a9e2782c74",
-        measurementId: "G-HKDZTDMYK6"
-      };
-      firebase.initializeApp(config);
-    </script>
+    <script src="app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-messaging.js"></script>
@@ -55,7 +56,6 @@
         </button>
       </div>
     </div>
-
-    <script src="scripts/chat.js"></script>
+    <script src="chat.js"></script>
   </body>
 </html>

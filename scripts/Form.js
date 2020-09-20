@@ -44,7 +44,7 @@ class Form extends Component {
         <label for="chore">Chore</label>
         <input
           type="text"
-          name="chore"
+          name="name"
           id="chore"
           value={chore}
           onChange={this.handleChange}
@@ -52,7 +52,7 @@ class Form extends Component {
         <label for="weekday">Weekday</label>
         <input
           type="text"
-          name="weekday"
+          name="name"
           id="weekday"
           value={weekday}
           onChange={this.handleChange}
