@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grocery List Prototype</title>
+
+    <!-- styling -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- firebase for messaging-->
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+    <script src="app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-messaging.js"></script>
+  </head>
+  <body onload="init()">
+    <div class="card justify-content-center">
+      <div id="content"></div>
+      <ul id="groceries-as-list"></ul>
+      <div class="input-bar justify-content-center">
+        <input type="text" id="grocery-input" class="col-10" />
+        <button
+          type="button"
+          onclick="pushChatGrocery()"
+          id="send-button"
+          class="btn-dark"
+        >
+          send
+        </button>
+      </div>
+    </div>
+
+    <script src="groceries.js></script>
+  </body>
+</html>
